@@ -1,0 +1,5 @@
++ Need to manually add "$(SDKROOT)/usr/include/libxml2" to header search paths
+  of the test target
++ Need to manually add the -lxml2 linker flag to the test target
++ Need to manually REMOVE '-l"xml2"' entry from Pods.debug.xcconfig and
+  Pods.release.xcconfig files
