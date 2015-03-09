@@ -7,5 +7,5 @@ An iOS static library providing a collection of convenient XML helper functions.
 ### Installation with CocoaPods
 
 ```ruby
-pod "PEXML-Utils"
+pod 'PEXML-Utils', '~> 1.0.1'
 ```
