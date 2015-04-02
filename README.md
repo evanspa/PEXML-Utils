@@ -12,7 +12,7 @@ PEXML-Utils is part of the
 **Table of Contents**
 - [Documentation](#documentation)
 - [Installation](#installation-with-cocoapods)
-- [pe-* Clojure Library Suite](#pe--clojure-library-suite)
+- [PE* iOS Library Suite](#pe-ios-library-suite)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
