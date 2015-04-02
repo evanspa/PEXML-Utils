@@ -10,13 +10,13 @@ PEXML-Utils is part of the
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
-- [Documentation and Demo](#documentation-and-demo)
-- [Installation](#installation)
+- [Documentation](#documentation)
+- [Installation](#installation-with-cocoapods)
 - [pe-* Clojure Library Suite](#pe--clojure-library-suite)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-## Documentation and Demo
+## Documentation
 
 * [API docs](http://cocoadocs.org/docsets/PEXML-Utils)
 
