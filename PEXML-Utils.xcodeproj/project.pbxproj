@@ -10,7 +10,6 @@
 		1869DCB61A7B32EA000FFA81 /* libPEXML-Utils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1869DCAA1A7B32EA000FFA81 /* libPEXML-Utils.a */; };
 		1869DCC61A7B34CD000FFA81 /* PEXMLUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1869DCC51A7B34CD000FFA81 /* PEXMLUtils.m */; };
 		1869DCC81A7B3528000FFA81 /* PEXMLUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1869DCC71A7B3528000FFA81 /* PEXMLUtilsTests.m */; };
-		49F4054512C219B7DE2C18BA /* libPods-PEXML-UtilsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F20BF6A9F14EA3492B50FAD /* libPods-PEXML-UtilsTests.a */; };
 		BFA9635999E7DD8B65CA7E1A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86B7323BAB8CF12459021F72 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -65,7 +64,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1869DCB61A7B32EA000FFA81 /* libPEXML-Utils.a in Frameworks */,
-				49F4054512C219B7DE2C18BA /* libPods-PEXML-UtilsTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,7 +166,6 @@
 				1869DCB11A7B32EA000FFA81 /* Sources */,
 				1869DCB21A7B32EA000FFA81 /* Frameworks */,
 				1869DCB31A7B32EA000FFA81 /* Resources */,
-				DBA7F70FC55F2364D0318208 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -186,7 +183,7 @@
 		1869DCA21A7B32EA000FFA81 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Paul Evans";
 				TargetAttributes = {
 					1869DCA91A7B32EA000FFA81 = {
@@ -271,21 +268,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DBA7F70FC55F2364D0318208 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PEXML-UtilsTests/Pods-PEXML-UtilsTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -318,6 +300,7 @@
 /* Begin XCBuildConfiguration section */
 		1869DCBC1A7B32EA000FFA81 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B1148880E6850A1671CA82F /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -335,6 +318,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -349,7 +333,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -358,6 +342,7 @@
 		};
 		1869DCBD1A7B32EA000FFA81 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10ECF817CFC959C1364F944F /* Pods.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -383,7 +368,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -412,62 +397,38 @@
 		};
 		1869DCC21A7B32EA000FFA81 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4803915EDD0E2F4C2D8A53BC /* Pods-PEXML-UtilsTests.debug.xcconfig */;
+			baseConfigurationReference = 0B1148880E6850A1671CA82F /* Pods.debug.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				HEADER_SEARCH_PATHS = (
-					"\"${PODS_ROOT}/Headers/Public\"",
-					"\"${PODS_ROOT}/Headers/Public/AWPagedArray\"",
-					"\"${PODS_ROOT}/Headers/Public/KissXML\"",
-					"\"${PODS_ROOT}/Headers/Public/Kiwi\"",
-					"\"${PODS_ROOT}/Headers/Public/PEObjc-Commons\"",
-					"\"$(SDKROOT)/usr/include/libxml2\"",
+					"$(inherited)",
+					"$(SDKROOT)/usr/include/libxml2",
 				);
 				INFOPLIST_FILE = "PEXML-UtilsTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-l\"Pods-PEXML-UtilsTests-Kiwi\"",
-					"-framework",
-					"\"XCTest\"",
-					"-l\"xml2\"",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "name.paulevans.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		1869DCC31A7B32EA000FFA81 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E0EB924D140BF7B8C72E03F5 /* Pods-PEXML-UtilsTests.release.xcconfig */;
+			baseConfigurationReference = 10ECF817CFC959C1364F944F /* Pods.release.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = (
-					"\"${PODS_ROOT}/Headers/Public\"",
-					"\"${PODS_ROOT}/Headers/Public/AWPagedArray\"",
-					"\"${PODS_ROOT}/Headers/Public/KissXML\"",
-					"\"${PODS_ROOT}/Headers/Public/Kiwi\"",
-					"\"${PODS_ROOT}/Headers/Public/PEObjc-Commons\"",
-					"\"$(SDKROOT)/usr/include/libxml2\"",
+					"$(inherited)",
+					"$(SDKROOT)/usr/include/libxml2",
 				);
 				INFOPLIST_FILE = "PEXML-UtilsTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-l\"Pods-PEXML-UtilsTests-Kiwi\"",
-					"-framework",
-					"\"XCTest\"",
-					"-l\"xml2\"",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "name.paulevans.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

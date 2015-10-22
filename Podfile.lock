@@ -1,19 +1,34 @@
 PODS:
-  - AWPagedArray (0.3.0)
+  - BlocksKit (2.2.5):
+    - BlocksKit/All (= 2.2.5)
+  - BlocksKit/All (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.5)
+  - BlocksKit/DynamicDelegate (2.2.5)
+  - BlocksKit/MessageUI (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/UIKit (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
   - KissXML (5.0)
-  - Kiwi (2.3.1)
-  - PEObjc-Commons (1.0.1):
-    - AWPagedArray (~> 0.3.0)
+  - Kiwi (2.4.0)
+  - PEObjc-Commons (1.0.73):
+    - BlocksKit (~> 2.2.5)
 
 DEPENDENCIES:
+  - BlocksKit (~> 2.2.5)
   - KissXML (~> 5.0)
-  - Kiwi (~> 2.3.1)
-  - PEObjc-Commons (~> 1.0.1)
+  - Kiwi (~> 2.4.0)
+  - PEObjc-Commons (~> 1.0.73)
 
 SPEC CHECKSUMS:
-  AWPagedArray: c66f6186321cd37bff0a26e714f157f5d27009e9
-  KissXML: e537c38b18ede903ee6de45953a9bd86c131ebe9
-  Kiwi: 73e1400209055ee9c8ba78c6012b6b642d0fb9f7
-  PEObjc-Commons: 2bab8aa6545df045571785d818362cdfa0094a63
+  BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
+  KissXML: ce643413d618ad69886d0d43c3792b7dedfe476e
+  Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
+  PEObjc-Commons: e87d8679737960cac9a9ca1c03dd036c5d048b18
 
-COCOAPODS: 0.35.0
+COCOAPODS: 0.39.0

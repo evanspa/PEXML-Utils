@@ -21,7 +21,7 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import <PEObjc-Commons/PEUtils.h>
+#import "PEUtils.h"
 #import "PEXMLUtils.h"
 #import "DDXMLDocument.h"
 
