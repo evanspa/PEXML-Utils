@@ -23,7 +23,7 @@ PEXML-Utils is part of the
 ### Installation with CocoaPods
 
 ```ruby
-pod 'PEXML-Utils', '~> 1.0.3'
+pod 'PEXML-Utils', '~> 1.0.4'
 ```
 
 ## PE* iOS Library Suite

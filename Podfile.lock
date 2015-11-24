@@ -16,19 +16,19 @@ PODS:
     - BlocksKit/DynamicDelegate
   - KissXML (5.0)
   - Kiwi (2.4.0)
-  - PEObjc-Commons (1.0.73):
+  - PEObjc-Commons (1.0.86):
     - BlocksKit (~> 2.2.5)
 
 DEPENDENCIES:
   - BlocksKit (~> 2.2.5)
   - KissXML (~> 5.0)
   - Kiwi (~> 2.4.0)
-  - PEObjc-Commons (~> 1.0.73)
+  - PEObjc-Commons (~> 1.0.86)
 
 SPEC CHECKSUMS:
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
   KissXML: ce643413d618ad69886d0d43c3792b7dedfe476e
   Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
-  PEObjc-Commons: e87d8679737960cac9a9ca1c03dd036c5d048b18
+  PEObjc-Commons: 590bf3988d90666d307a618384ebc72181dc3bb2
 
 COCOAPODS: 0.39.0
